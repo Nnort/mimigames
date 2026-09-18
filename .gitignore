@@ -3,3 +3,4 @@ dist/
 /portable/
 .shots/
 *.local
+.claude/settings.local.json
