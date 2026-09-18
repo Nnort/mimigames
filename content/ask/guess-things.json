@@ -1,0 +1,37 @@
+{
+  "id": "guess-things",
+  "mechanic": "ask",
+  "mode": "guess",
+  "title": "Что я загадал?",
+  "location": "home",
+  "character": "tom",
+  "topic": "ask-questions",
+  "rounds": 3,
+  "items": [
+    "ramen",
+    "marmalade",
+    "sausage",
+    "ball",
+    "balloon",
+    "slime",
+    "scooter",
+    "skateboard",
+    "bicycle",
+    "book",
+    "hamster",
+    "water"
+  ],
+  "questions": [
+    { "text": "Это можно съесть?", "prop": "edible" },
+    { "text": "Это можно пить?", "prop": "drinkable" },
+    { "text": "Это живое?", "prop": "alive" },
+    { "text": "На этом можно кататься?", "prop": "rideable" },
+    { "text": "Этим играют?", "prop": "toy" },
+    { "text": "Это можно читать?", "prop": "read" },
+    { "text": "Это мягкое?", "prop": "soft" },
+    { "text": "Это круглое?", "prop": "round" },
+    { "text": "Это горячее?", "prop": "hot" },
+    { "text": "У этого есть руль?", "prop": "handle" },
+    { "text": "Это большое?", "prop": "big" }
+  ]
+}

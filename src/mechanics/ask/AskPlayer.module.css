@@ -1,0 +1,168 @@
+.lead {
+  margin: 0 0 1.25rem;
+  font-size: calc(var(--step) * 1.35);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.reply {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  background: var(--blue-soft);
+  border-radius: var(--radius);
+  padding: 0.85rem 1.1rem;
+  margin: 0 0 1.5rem;
+  font-size: calc(var(--step) * 1.15);
+}
+
+.replyQuestion {
+  color: var(--ink-soft);
+}
+
+.yes {
+  color: var(--green);
+  font-size: calc(var(--step) * 1.3);
+}
+
+.no {
+  color: var(--miss);
+  font-size: calc(var(--step) * 1.3);
+}
+
+.items {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.9rem;
+}
+
+.item,
+.itemOut {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  background: #fff;
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.6rem;
+  transition: opacity 400ms ease, filter 400ms ease, border-color 120ms ease;
+}
+
+.item img,
+.itemOut img {
+  width: 100%;
+  height: 92px;
+  object-fit: contain;
+  /* Предметы сняты на почти белом фоне. Подкладываем тот же тон, иначе на чисто
+     белой карточке видно прямоугольник картинки. */
+  background: #f7f7f7;
+  border-radius: 10px;
+}
+
+.item span,
+.itemOut span {
+  font-size: calc(var(--step) * 0.95);
+}
+
+.item:hover:not(:disabled) {
+  border-color: var(--blue);
+}
+
+/* Отсеянный предмет гаснет, но остаётся на месте: видно, что вопрос сработал. */
+.itemOut {
+  opacity: 0.25;
+  filter: grayscale(1);
+  cursor: default;
+}
+
+.counter {
+  margin: 0 0 0.75rem;
+  color: var(--ink-soft);
+}
+
+/* Число — главная обратная связь на заданный вопрос, поэтому выделено. */
+.counterValue {
+  color: var(--blue);
+  font-size: calc(var(--step) * 1.3);
+  font-weight: 600;
+}
+
+.questions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.ask,
+.askedOut {
+  width: 100%;
+  text-align: left;
+  background: var(--paper);
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.85rem 1.25rem;
+  font-size: calc(var(--step) * 1.15);
+}
+
+.ask:hover:not(:disabled) {
+  border-color: var(--blue);
+}
+
+.askedOut {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.next {
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.9rem 1.75rem;
+  font-size: calc(var(--step) * 1.15);
+  font-weight: 600;
+}
+
+.again {
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.9rem 1.75rem;
+  font-size: calc(var(--step) * 1.15);
+}
+
+.summary {
+  margin: auto;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.balloons {
+  font-size: 2.5rem;
+  line-height: 1.4;
+}
+
+.summaryTitle {
+  font-size: calc(var(--step) * 2.2);
+  margin: 0.5rem 0;
+}
+
+.summaryText {
+  color: var(--ink-soft);
+  font-size: calc(var(--step) * 1.2);
+}
+
+.summaryButtons {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}

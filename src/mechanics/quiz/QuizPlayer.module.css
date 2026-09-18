@@ -1,0 +1,149 @@
+.passage {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: var(--blue-soft);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.passageText {
+  margin: 0;
+  flex: 1;
+  font-size: calc(var(--step) * 1.2);
+  line-height: 1.6;
+}
+
+.passageSpeak {
+  flex: none;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.35rem 0.6rem;
+}
+
+.picture {
+  display: block;
+  width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+}
+
+.question {
+  margin: 0 0 1.25rem;
+  font-size: calc(var(--step) * 1.5);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.option,
+.optionRight,
+.optionMiss {
+  width: 100%;
+  text-align: left;
+  background: var(--paper);
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  font-size: calc(var(--step) * 1.2);
+  transition: border-color 120ms ease, background 120ms ease;
+}
+
+.option:hover:not(:disabled) {
+  border-color: var(--blue);
+}
+
+.optionRight {
+  background: var(--green-soft);
+  border-color: var(--green);
+}
+
+/* Ошибка — нейтральный серо-синий, без красного. */
+.optionMiss {
+  background: var(--miss-soft);
+  border-color: var(--miss);
+}
+
+.hint {
+  margin: 1.25rem 0 0;
+  background: var(--paper);
+  border-radius: var(--radius);
+  padding: 0.85rem 1.1rem;
+  color: var(--ink-soft);
+}
+
+.hintButton {
+  margin-top: 1.25rem;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.5rem 1.1rem;
+}
+
+.missed {
+  margin: 1.25rem 0 0;
+  color: var(--miss);
+  font-size: calc(var(--step) * 1.1);
+}
+
+.explain {
+  margin: 1rem 0 0;
+  color: var(--ink-soft);
+}
+
+.next {
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.9rem 1.75rem;
+  font-size: calc(var(--step) * 1.15);
+  font-weight: 600;
+}
+
+.again {
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.9rem 1.75rem;
+  font-size: calc(var(--step) * 1.15);
+}
+
+.summary {
+  margin: auto;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.balloons {
+  font-size: 2.5rem;
+  line-height: 1.4;
+}
+
+.summaryTitle {
+  font-size: calc(var(--step) * 2.2);
+  margin: 0.5rem 0;
+}
+
+.summaryText {
+  color: var(--ink-soft);
+  font-size: calc(var(--step) * 1.2);
+}
+
+.summaryButtons {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}

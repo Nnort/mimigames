@@ -1,0 +1,119 @@
+.panel {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 3rem;
+}
+
+.back {
+  background: transparent;
+  border: none;
+  color: var(--blue);
+  padding: 0.35rem 0;
+}
+
+.title {
+  font-size: calc(var(--step) * 2);
+  margin: 0.5rem 0 1rem;
+}
+
+.lead {
+  color: var(--ink-soft);
+  margin: 0 0 1.5rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.row span {
+  display: flex;
+  flex-direction: column;
+}
+
+.row small {
+  color: var(--ink-soft);
+}
+
+.row input[type='checkbox'] {
+  width: 24px;
+  height: 24px;
+  order: 2;
+  accent-color: var(--blue);
+}
+
+.steps {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.step,
+.stepOn {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+}
+
+.stepOn {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
+}
+
+.test {
+  margin-top: 1rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.75rem 1.25rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--line);
+  font-size: calc(var(--step) * 1);
+}
+
+.table th {
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.confirm {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.danger {
+  background: var(--miss);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.45rem 1.1rem;
+}

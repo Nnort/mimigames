@@ -1,0 +1,76 @@
+/* Палитра из docs/style-guide.md. Красный не используется нигде: в тетради Веры
+   красным исправляет учитель, связка уже есть. */
+:root {
+  --blue: #2f4fa2;
+  --blue-soft: #e6ecfa;
+  --sky: #8fc2e8;
+  --sand: #c98a5e;
+  --green: #6fa83c;
+  --green-soft: #eaf4de;
+  --amber: #d9552f;
+  --paper: #f5efe6;
+  --card: #ffffff;
+  --ink: #2b2b33;
+  --ink-soft: #6b6b78;
+  --line: #e2dcd2;
+
+  /* Ошибка — нейтральный серо-синий, а не тревожный цвет. */
+  --miss: #7b8697;
+  --miss-soft: #eef0f3;
+
+  --radius: 16px;
+  --shadow: 0 2px 8px rgb(43 43 51 / 8%);
+
+  --font-scale: 1;
+  --step: calc(1rem * var(--font-scale));
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: calc(var(--step) * 1.15);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Спокойный режим: анимации выключаются целиком. */
+:root[data-calm='true'] *,
+:root[data-calm='true'] *::before,
+:root[data-calm='true'] *::after {
+  animation-duration: 0s !important;
+  transition-duration: 0s !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+  }
+}
+
+:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 2px;
+}

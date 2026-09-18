@@ -1,0 +1,14 @@
+{
+  "ramen": { "title": "Рамен", "props": ["edible", "hot"] },
+  "marmalade": { "title": "Мармеладки", "props": ["edible", "soft"] },
+  "sausage": { "title": "Сосиски", "props": ["edible"] },
+  "ball": { "title": "Мяч", "props": ["toy", "round"] },
+  "balloon": { "title": "Шарик", "props": ["toy", "round", "soft"] },
+  "slime": { "title": "Слайм", "props": ["toy", "soft"] },
+  "scooter": { "title": "Самокат", "props": ["rideable", "handle"] },
+  "skateboard": { "title": "Скейт", "props": ["rideable"] },
+  "bicycle": { "title": "Велосипед", "props": ["rideable", "handle", "big"] },
+  "book": { "title": "Книга", "props": ["read"] },
+  "hamster": { "title": "Хомяк", "props": ["alive", "soft"] },
+  "water": { "title": "Стакан воды", "props": ["drinkable"] }
+}
